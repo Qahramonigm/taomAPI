@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="" href="style.css">
-    <link rel="stylesheet" type="" href="media.css">
+    <title>KafeChao</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
                 <h1 class="header__h3">KafeChao</h1>
 
                 <div class="header__right">
-                    <input type="search" name="search" value="" placeholder="Search..." class="header__search">
+                    <input type="search" name="search" placeholder="Search..." class="header__search">
                     <button type="submit" class="header__button">Qidirish</button>
 
                     <label for="sort"></label>
@@ -26,7 +28,6 @@
                         <option value="Beef">Saralash: Ovqatlar</option>
                         <option value="Dessert">Saralash: Mahsulotlar</option>
                     </select>
-
 
                     <button class="header__button-sevimlilar" onclick="toggleNavbar()">❤</button>
 
@@ -38,9 +39,7 @@
                         <ul id="favorites-list"></ul>
                     </div>
 
-
-
-                    <img src="./img/sale1.png" alt="" class="header__sale">
+                    <img src="img/sale1.png" alt="Aksiya" class="header__sale">
                 </div>
             </div>
         </div>
@@ -50,15 +49,14 @@
         <div class="main">
             <div class="main__content">
                 <div class="box__reklam">
-                    <img src="../API dp/img/pizza1.png" alt="" class="main__img anim-item">
+                    <img src="img/pizza1.png" alt="Pizza reklama" class="main__img anim-item">
 
                     <h1 class="main__pizza anim-item">PIZZA</h1>
                     <p class="subtitle anim-item">Mazali, issiq va yangi taomlar turini tanlang!</p>
 
                     <button class="pizza-btn anim-item">Bang'illating</button>
 
-                    <img src="./img/pizza2.png" alt="" class="pizza2 anim-item">
-
+                    <img src="img/pizza2.png" alt="Pizza dekor" class="pizza2 anim-item">
                 </div>
             </div>
         </div>
@@ -70,21 +68,17 @@
                 <h1 class="section__h1 anim-item">Mahsulotlar</h1>
 
                 <div class="section__box anim-item" id="product-list">
-                    <div id="sectionCard" class="cards-wrapper anim-item">
-
-                    </div>
+                    <div id="sectionCard" class="cards-wrapper anim-item"></div>
 
                     <section class="browse-section">
                         <h2 class="browse-title">Browse By Name</h2>
-                        <div class="browse-letters" id="searchLatter">
-                        </div>
+                        <div class="browse-letters" id="searchLatter"></div>
                     </section>
-
                 </div>
             </div>
         </div>
     </section>
-    
+
     <footer>
         <div class="footer">
             <div class="footer__content">
@@ -93,8 +87,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <script src="main.js"></script>
 </body>
