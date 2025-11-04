@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="" href="style.css">
+    <link rel="stylesheet" type="" href="media.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header__content">
+                <h1 class="header__h3">KafeChao</h1>
+
+                <div class="header__right">
+                    <input type="search" name="search" value="" placeholder="Search..." class="header__search">
+                    <button type="submit" class="header__button">Qidirish</button>
+
+                    <label for="sort"></label>
+                    <select id="sort">
+                        <option value="All">Saralash: Barchasi</option>
+                        <option value="Beef">Saralash: Ovqatlar</option>
+                        <option value="Dessert">Saralash: Mahsulotlar</option>
+                    </select>
+
+
+                    <button class="header__button-sevimlilar" onclick="toggleNavbar()">❤</button>
+
+                    <div class="fav-navbar">
+                        <div class="fav-header">
+                            <h3>Sevimlilar</h3>
+                            <span class="close-navbar" onclick="closeNavbar()">✖</span>
+                        </div>
+                        <ul id="favorites-list"></ul>
+                    </div>
+
+
+
+                    <img src="./img/sale1.png" alt="" class="header__sale">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="main__content">
+                <div class="box__reklam">
+                    <img src="../API dp/img/pizza1.png" alt="" class="main__img anim-item">
+
+                    <h1 class="main__pizza anim-item">PIZZA</h1>
+                    <p class="subtitle anim-item">Mazali, issiq va yangi taomlar turini tanlang!</p>
+
+                    <button class="pizza-btn anim-item">Bang'illating</button>
+
+                    <img src="./img/pizza2.png" alt="" class="pizza2 anim-item">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="section">
+            <div class="section__content">
+                <h1 class="section__h1 anim-item">Mahsulotlar</h1>
+
+                <div class="section__box anim-item" id="product-list">
+                    <div id="sectionCard" class="cards-wrapper anim-item">
+
+                    </div>
+
+                    <section class="browse-section">
+                        <h2 class="browse-title">Browse By Name</h2>
+                        <div class="browse-letters" id="searchLatter">
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer__content">
+                <h1 class="footer__h1">KafeChao</h1>
+                <p class="footer__p">© 2024 KafeChao. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
