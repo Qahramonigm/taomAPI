@@ -1,9 +1,310 @@
-@media(max-width: 1100px) {}
+/* Responsive adjustments for various breakpoints
+	 Keeps visual hierarchy and spacing consistent across devices */
 
-@media(max-width: 768px) {}
+@media (max-width: 1100px) {
+    .header__h3 {
+        font-size: 40px;
+    }
 
-@media(max-width: 576px) {}
+    .header__content {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
 
-@media(max-width: 420px) {}
+    .header__sale {
+        left: 90%;
+        width: 70px;
+    }
 
-@media(max-width: 350px) {}
+    .main__content {
+        height: 320px;
+    }
+
+    .box__reklam {
+        height: 280px;
+        border-radius: 16px;
+    }
+
+    .pizza2 {
+        width: 260px;
+        left: 68%;
+    }
+
+    .section__h1 {
+        font-size: 36px;
+    }
+
+    .cards-wrapper {
+        gap: 16px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: auto;
+        padding: 10px 18px;
+    }
+
+    .header__h3 {
+        font-size: 36px;
+    }
+
+    .header__right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .header__search {
+        width: 160px;
+    }
+
+    .header__button,
+    #sort,
+    .header__button-sevimlilar {
+        height: 36px;
+    }
+
+    .header__sale {
+        display: none;
+    }
+
+    .main__content {
+        height: auto;
+    }
+
+    .box__reklam {
+        flex-direction: column;
+        padding: 18px;
+        height: auto;
+        min-height: 260px;
+    }
+
+    .main__img {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 180px;
+        height: auto;
+    }
+
+    .main__pizza {
+        position: relative;
+        left: 0;
+        top: 0;
+        font-size: 40px;
+        margin-top: 8px;
+    }
+
+    .subtitle {
+        position: relative;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        margin-top: 6px;
+    }
+
+    .pizza2 {
+        display: none;
+    }
+
+    .pizza-btn {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 12px;
+    }
+
+    .section__box {
+        width: 95%;
+        margin: 12px auto;
+    }
+
+    .cards-wrapper {
+        justify-content: center;
+    }
+
+    .card {
+        width: 240px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__h3 {
+        font-size: 30px;
+    }
+
+    .header__search {
+        width: 140px;
+    }
+
+    #sort {
+        width: 120px;
+    }
+
+    .header__button {
+        width: 55px;
+    }
+
+    .box__reklam {
+        border-radius: 12px;
+        padding: 12px;
+    }
+
+    .main__img {
+        width: 150px;
+    }
+
+    .main__pizza {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .pizza-btn {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    .cards-wrapper {
+        gap: 14px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .browse-letters {
+        gap: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header__h3 {
+        font-size: 26px;
+    }
+
+    .header__content {
+        padding: 8px 12px;
+    }
+
+    .header__search {
+        width: 120px;
+        padding: 8px;
+    }
+
+    #sort {
+        display: none;
+    }
+
+    .header__button {
+        width: 50px;
+        font-size: 14px;
+    }
+
+    .box__reklam {
+        padding: 10px;
+        display: block;
+    }
+
+    .main__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main__pizza {
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .pizza-btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 360px;
+    }
+
+    .card img {
+        height: 160px;
+    }
+
+    .browse-letters {
+        gap: 8px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header__h3 {
+        font-size: 22px;
+    }
+
+    .header__search {
+        width: 100px;
+    }
+
+    .pizza-btn {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+
+    .section__h1 {
+        font-size: 28px;
+    }
+
+    .card img {
+        height: 140px;
+    }
+
+    .browse-letters {
+        gap: 6px;
+        font-size: 14px;
+    }
+}
+
+/* Improve fav-navbar animation on small screens */
+@media (max-width: 768px) {
+    .fav-navbar {
+        width: 100%;
+        right: -100%;
+        height: 50vh;
+        bottom: 0;
+        top: auto;
+        transition: 0.4s;
+    }
+
+    .header__button-sevimlilar.active+.fav-navbar {
+        right: 0;
+    }
+}
+
+/* Small visual polish */
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.browse-title {
+    font-size: 18px;
+}
